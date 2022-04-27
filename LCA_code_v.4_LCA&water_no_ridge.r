@@ -37,12 +37,12 @@ mean(pare20_nn)      #mean=762.9
 median(pare20_nn)    #median=723.4
 
 #Perform L function test againt 39 realizations of CSR with fixed number of points
-set.seed(1234) #set random seed to get reproducible result
+set.seed(6789) #set random seed to get reproducible result
 pare10_L <- envelope(pare10, fun=Lest,  fix.n=T,nsim=39) 
 #check it
 plot(pare10_L)
 
-set.seed(1234) #set random seed to get reproducible result
+set.seed(6789) #set random seed to get reproducible result
 pare20_L <- envelope(pare20, fun=Lest,  fix.n=T,nsim=39) 
 #check it
 plot(pare20_L)
@@ -212,7 +212,7 @@ mtext(side=3, line=1, at=-1, adj=0, cex=1, "b)")
 par(mfrow=c(1,1))
 
 
-#plot relative distributions of pare10        
+#plot relative distributions of pare10        SOmething needs fixed here with the first line in order to create the file
 
 par(mfrow=c(2,2))
 plot(elev_rh10, legend=F, xlab=("Elevation ASL"), main="", xlim=c(0,500), lwd=3)
@@ -243,9 +243,9 @@ par(mfrow=c(1,1))
 #residual diagnostic plots  
 
 par(mfrow=c(2,2))
-plot(K_sim10, lwd=3, main='', legend=F, xlab="r (meters)") #model 110
+plot(K_sim10, lwd=3, main='', legend=F, xlab="r (meters)") 
 mtext(side=3, line=1, at=0, adj=0, cex=1, "a)")
-plot(K_sim20, lwd=3, main='', legend=F, xlab="r (meters)") #model 210
+plot(K_sim20, lwd=3, main='', legend=F, xlab="r (meters)") 
 mtext(side=3, line=1, at=0, adj=0, cex=1, "b)")
 par(mfrow=c(1,1))
 
@@ -280,7 +280,7 @@ par(mfrow=c(1,1))
 
 
 ###################
-## Basic Maps ##### 
+## Basic Maps ##### need work to use
 ###################
 
 #plots maps with pare and the covariate
