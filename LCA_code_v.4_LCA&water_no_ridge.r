@@ -212,7 +212,7 @@ mtext(side=3, line=1, at=-1, adj=0, cex=1, "b)")
 par(mfrow=c(1,1))
 
 
-#plot relative distributions of pare10        SOmething needs fixed here with the first line in order to create the file
+#plot relative distributions of pare10        
 
 par(mfrow=c(2,2))
 plot(elev_rh10, legend=F, xlab=("Elevation ASL"), main="", xlim=c(0,500), lwd=3)
@@ -280,7 +280,7 @@ par(mfrow=c(1,1))
 
 
 ###################
-## Basic Maps ##### need work to use
+## Basic Maps ##### 
 ###################
 
 #plots maps with pare and the covariate
